@@ -3,39 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mukhethwa Morris Ramantswana | Developer & Coder</title>
+    <title>Mukhethwa Morris Ramantswana | Software Developer</title>
     
-    <!-- Google Schema Markup with Full Personal Details -->
+    <!-- Google SEO & Knowledge Graph Schema Markup -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Mukhethwa Morris Ramantswana",
-      "alternateName": ["R. Műkhɛthwa", "R. Mukhəthwa"],
-      "url": "https://ramantswanamukhethwa16-crypto.github.io/portfolio/",
-      "image": "https://ramantswanamukhethwa16-crypto.github.io/portfolio/IMG-20260116-WA0010.jpg",
-      "birthDate": "2009-08-11",
-      "telephone": "+27734548144",
-      "email": "ramantswanamukhethwa16@gmail.com",
-      "sameAs": [
-        "https://github.com/ramantswanamukhethwa16-crypto"
-      ],
-      "jobTitle": "Software Developer, Web Creator & Coder",
-      "knowsAbout": [
-        "Web Development",
-        "Node.js",
-        "Python",
-        "Automation Bots",
-        "Full-Stack Development"
-      ]
+      "@type": "ProfilePage",
+      "mainEntity": {
+        "@type": "Person",
+        "name": "Mukhethwa Morris Ramantswana",
+        "alternateName": ["R. Műkhɛthwa", "R. Mukhəthwa", "㊝ᴿ.ᴹ_⃝⃘̉̉ᴷᴴƐᵀᴴᵂᴬ"],
+        "birthDate": "2009-08-11",
+        "age": "17",
+        "jobTitle": "Software Developer",
+        "email": "ramantswanamukhethwa16@gmail.com",
+        "telephone": "+27734548144",
+        "image": "https://ramantswanamukhethwa16-crypto.github.io/RAMANTSWANA-PORTFOLIO-/1000015292.jpg",
+        "sameAs": [
+          "https://github.com/ramantswanamukhethwa16-crypto"
+        ],
+        "knowsAbout": ["Software Development", "Node.js", "Python", "Web Automation", "Bot Development"]
+      }
     }
     </script>
 
     <style>
         :root {
-            --bg-color: #0b0914;
-            --card-bg: #131022;
-            --accent-primary: #a855f7;
+            --bg-color: #0b0f19;
+            --card-bg: #131d31;
+            --accent: #a855f7;
             --accent-glow: rgba(168, 85, 247, 0.4);
             --text-main: #f3f4f6;
             --text-muted: #9ca3af;
@@ -45,217 +42,170 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
         body {
             background-color: var(--bg-color);
             color: var(--text-main);
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            line-height: 1.6;
             padding: 20px;
         }
 
         .container {
-            width: 100%;
-            max-width: 650px;
-            margin-top: 30px;
+            max-width: 800px;
+            margin: 0 auto;
         }
 
         header {
             text-align: center;
-            margin-bottom: 35px;
+            padding: 40px 20px;
+            background: var(--card-bg);
+            border-radius: 16px;
+            box-shadow: 0 0 25px var(--accent-glow);
+            border: 1px solid rgba(168, 85, 247, 0.2);
+            margin-bottom: 30px;
         }
 
-        .profile-avatar {
-            width: 110px;
-            height: 110px;
+        .profile-img {
+            width: 140px;
+            height: 140px;
             border-radius: 50%;
             object-fit: cover;
-            margin: 0 auto 20px auto;
-            box-shadow: 0 0 20px var(--accent-glow);
-            border: 2px solid var(--accent-primary);
-            display: block;
+            border: 3px solid var(--accent);
+            box-shadow: 0 0 15px var(--accent-glow);
+            margin-bottom: 20px;
         }
 
         h1 {
-            font-size: 1.8rem;
-            margin-bottom: 8px;
-            letter-spacing: 0.5px;
+            font-size: 2rem;
+            margin-bottom: 10px;
+            color: #fff;
         }
 
-        p.subtitle {
-            color: var(--accent-primary);
-            font-size: 1rem;
+        .tagline {
+            color: var(--accent);
+            font-size: 1.1rem;
             font-weight: 600;
+            margin-bottom: 15px;
         }
 
-        .card {
-            background-color: var(--card-bg);
-            border: 1px solid rgba(168, 85, 247, 0.2);
-            border-radius: 16px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-        }
-
-        .card h2 {
-            font-size: 1.2rem;
-            margin-bottom: 12px;
-            color: var(--accent-primary);
-        }
-
-        .card p {
+        .bio {
             color: var(--text-muted);
             font-size: 0.95rem;
-            line-height: 1.6;
-            margin-bottom: 12px;
+            max-width: 600px;
+            margin: 0 auto 20px auto;
         }
 
-        .contact-list {
-            list-style: none;
-            margin-top: 10px;
-        }
-
-        .contact-list li {
-            color: var(--text-muted);
-            font-size: 0.95rem;
-            margin-bottom: 8px;
-        }
-
-        .contact-list strong {
-            color: var(--text-main);
-        }
-
-        .skills-grid {
+        .contact-info {
             display: flex;
+            justify-content: center;
+            gap: 15px;
             flex-wrap: wrap;
-            gap: 8px;
-            margin-top: 12px;
+            margin-top: 15px;
         }
 
-        .skill-tag {
+        .badge {
             background: rgba(168, 85, 247, 0.1);
-            border: 1px solid rgba(168, 85, 247, 0.3);
-            color: #d8b4fe;
-            padding: 6px 12px;
+            color: var(--accent);
+            padding: 8px 16px;
             border-radius: 20px;
             font-size: 0.85rem;
-            font-weight: 500;
+            border: 1px solid rgba(168, 85, 247, 0.3);
+            text-decoration: none;
+        }
+
+        section {
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 16px;
+            margin-bottom: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        h2 {
+            font-size: 1.4rem;
+            margin-bottom: 20px;
+            color: #fff;
+            border-left: 4px solid var(--accent);
+            padding-left: 10px;
         }
 
         .gallery-grid {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 10px;
-            margin-top: 15px;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 15px;
         }
 
-        .gallery-img {
+        .gallery-item {
             width: 100%;
-            height: 100px;
+            height: 250px;
             object-fit: cover;
             border-radius: 10px;
-            border: 1px solid rgba(168, 85, 247, 0.3);
-            transition: transform 0.2s ease;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
-        .gallery-img:hover {
-            transform: scale(1.03);
-            box-shadow: 0 0 10px var(--accent-glow);
-        }
-
-        .links-grid {
-            display: grid;
-            gap: 12px;
-            margin-top: 15px;
-        }
-
-        .btn-link {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
-            padding: 14px;
-            background: linear-gradient(135deg, #7e22ce, #6b21a8);
-            color: #ffffff;
-            text-decoration: none;
-            border-radius: 12px;
-            font-weight: 600;
-            box-shadow: 0 4px 12px rgba(126, 34, 206, 0.3);
-            transition: all 0.2s ease;
-        }
-
-        .btn-link:hover {
-            background: linear-gradient(135deg, #9333ea, #7e22ce);
-            box-shadow: 0 0 15px var(--accent-glow);
+        .gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px var(--accent-glow);
         }
 
         footer {
             text-align: center;
-            margin-top: auto;
-            padding: 20px;
             color: var(--text-muted);
             font-size: 0.85rem;
+            padding: 20px;
         }
     </style>
 </head>
 <body>
 
     <div class="container">
+        <!-- Profile Header -->
         <header>
-            <!-- Primary Profile Picture -->
-            <img src="IMG-20260116-WA0010.jpg" alt="Mukhethwa Morris Ramantswana" class="profile-avatar">
+            <img src="1000015292.jpg" alt="Mukhethwa Morris Ramantswana" class="profile-img">
             <h1>Mukhethwa Morris Ramantswana</h1>
-            <p class="subtitle">Software Developer | Coder | Web Creator</p>
+            <div class="tagline">Software Developer & Automation Engineer</div>
+            <p class="bio">
+                I am a 17-year-old passionate software developer specializing in backend engineering, web applications, and automation tools. I build responsive platforms and custom bot utilities.
+            </p>
+            <div class="contact-info">
+                <span class="badge">Age: 17</span>
+                <a href="mailto:ramantswanamukhethwa16@gmail.com" class="badge">Email Me</a>
+                <a href="tel:+27734548144" class="badge">Call / WhatsApp</a>
+            </div>
         </header>
 
-        <section class="card">
-            <h2>About Me</h2>
-            <p>I am a 17-year-old passionate <strong>Software Developer, Coder, and Web Creator</strong> (born August 11, 2009) dedicated to building dynamic web applications, automated utilities, and functional digital experiences.</p>
-            <ul class="contact-list">
-                <li><strong>Email:</strong> ramantswanamukhethwa16@gmail.com</li>
-                <li><strong>Phone:</strong> 073 454 8144</li>
-            </ul>
-        </section>
-
-        <section class="card">
-            <h2>Core Expertise & Tech Stack</h2>
-            <p>Equipped with hands-on experience across backend development, scripting, and mobile-optimized web interfaces:</p>
-            <div class="skills-grid">
-                <span class="skill-tag">Web Development</span>
-                <span class="skill-tag">Coding & Scripting</span>
-                <span class="skill-tag">Node.js & Express</span>
-                <span class="skill-tag">Python & Flask</span>
-                <span class="skill-tag">Automation Bots</span>
-                <span class="skill-tag">Git & GitHub</span>
-                <span class="skill-tag">Responsive UI/UX</span>
-            </div>
-        </section>
-
-        <section class="card">
+        <!-- Gallery Section with All Uploaded Pictures -->
+        <section>
             <h2>Photo Gallery</h2>
-            <p>A collection of personal images indexed for my digital portfolio profile.</p>
             <div class="gallery-grid">
-                <img src="IMG-20260116-WA0010.jpg" alt="Mukhethwa Morris Ramantswana photo 1" class="gallery-img">
-                <img src="1000020284.jpg" alt="Mukhethwa Morris Ramantswana photo 2" class="gallery-img">
-                <img src="1000015292.jpg" alt="Mukhethwa Morris Ramantswana photo 3" class="gallery-img">
+                <img src="1000015292.jpg" alt="Mukhethwa Morris Ramantswana Photo 1" class="gallery-item">
+                <img src="1000015293.jpg" alt="Mukhethwa Morris Ramantswana Photo 2" class="gallery-item">
+                <img src="1000020284.jpg" alt="Mukhethwa Morris Ramantswana Photo 3" class="gallery-item">
+                <img src="IMG-20251008-WA0003.jpg" alt="Mukhethwa Morris Ramantswana Photo 4" class="gallery-item">
+                <img src="IMG-20260116-WA0010.jpg" alt="Mukhethwa Morris Ramantswana Photo 5" class="gallery-item">
+                <img src="IMG-20260116-WA0012.jpg" alt="Mukhethwa Morris Ramantswana Photo 6" class="gallery-item">
             </div>
         </section>
 
-        <section class="card">
-            <h2>Connect & Code Repositories</h2>
-            <div class="links-grid">
-                <a href="https://github.com/ramantswanamukhethwa16-crypto" target="_blank" class="btn-link">Explore My GitHub Repositories</a>
+        <!-- Tech Stack Section -->
+        <section>
+            <h2>Core Technical Skills</h2>
+            <div class="contact-info">
+                <span class="badge">Node.js / Express</span>
+                <span class="badge">Python / Flask</span>
+                <span class="badge">Git & GitHub</span>
+                <span class="badge">Bot Automation</span>
+                <span class="badge">HTML5 / CSS3</span>
             </div>
         </section>
+
+        <footer>
+            &copy; 2026 Mukhethwa Morris Ramantswana (R. Műkhɛthwa). All rights reserved.
+        </footer>
     </div>
-
-    <footer>
-        &copy; 2026 Mukhethwa Morris Ramantswana. All rights reserved.
-    </footer>
 
 </body>
 </html>
